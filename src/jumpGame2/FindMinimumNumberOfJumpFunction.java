@@ -9,6 +9,7 @@ public class FindMinimumNumberOfJumpFunction {
         int jumpStep = 0;
         
         for(int i = 0; i < nums.length - 1; i++){
+            // currentFarthest will get the farthest jump destination 
             currentFarthest = Math.max(currentFarthest, i + nums[i]);
             
             // If the current jump could reach to the end index, then we got it
@@ -18,6 +19,7 @@ public class FindMinimumNumberOfJumpFunction {
             //     break;
             // }
             
+            // Only increase jump step when reach current end
             if(i == currentEnd){
                 jumpStep++;
                 currentEnd = currentFarthest; 
