@@ -1,4 +1,4 @@
-package jumpGame2;
+package leetcode45;
 
 public class FindMinimumNumberOfJumpFunction {
     public int jump(int[] nums) {
